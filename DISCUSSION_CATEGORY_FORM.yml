@@ -1,0 +1,17 @@
+name: General
+description: General discussions
+title: "[Discussion]: "
+labels: ["discussion"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thanks for starting a discussion!
+  - type: textarea
+    id: discussion
+    attributes:
+      label: Discussion
+      description: What would you like to discuss?
+      placeholder: Tell us what you think
+    validations:
+      required: true

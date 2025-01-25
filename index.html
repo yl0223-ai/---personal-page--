@@ -6,7 +6,7 @@
     <title>认识我，也认识他们</title>
     <script src="https://cdn.tailwindcss.com"></script>
 </head>
-<body class="bg-gray-100 relative" style="background-image: url('./background.jpg'); background-size: cover; background-position: center; background-attachment: fixed; background-repeat: no-repeat;">
+<body class="bg-gray-100 relative" style="background-image: url('./images/background.jpg'); background-size: cover; background-position: center; background-attachment: fixed; background-repeat: no-repeat;">
     <div class="absolute inset-0 bg-white/80 backdrop-blur-sm -z-10"></div>
     <div class="container mx-auto px-4 py-8">
         <!-- 导航栏 -->
@@ -32,7 +32,7 @@
                 <p class="text-gray-600 leading-relaxed">2025年，我也要折腾些创新的事。</p>
                 <p class="text-gray-600 leading-relaxed">是时候拣起商科生的老本行，把自己对技术商业化的思考沉淀下来，同时探索新边界，hands on 做更大的事。</p>
                 <div class="mt-6">
-                    <img src="./avatar.jpg" alt="个人照片" class="w-48 h-48 rounded object-cover shadow-lg">
+                    <img src="./images/avatar.jpg" alt="个人照片" class="w-48 h-48 rounded object-cover shadow-lg">
                 </div>
             </div>
         </section>
@@ -51,7 +51,7 @@
                     <a href="https://mp.weixin.qq.com/s/DsQ7pAyaw5ajin_JH-9itA" class="text-base font-semibold mb-2 hover:text-blue-600 block" style="font-size: 10.5pt;" target="_blank">对话彭博：开源LLM「RWKV」想要打造AI领域的Linux和Android｜ChatAI</a>
                 </article>
                 <article class="border-l-4 border-blue-600 pl-4">
-                    <a href="https://mp.weixin.qq.com/s/isSVsYXAGzm5ZBR1jK1L4Q" class="text-base font-semibold mb-2 hover:text-blue-600 block" style="font-size: 10.5pt;" target="_blank">ToB AI Agent 应用落地的可信挑战与解决途径｜Z 计划企业「彩智科技」徐剑军</a>
+                    <a href="#" class="text-base font-semibold mb-2 hover:text-blue-600 block" style="font-size: 10.5pt;" target="_blank">ToB AI Agent 应用落地的可信挑战与解决途径｜Z 计划企业「彩智科技」徐剑军</a>
                 </article>
                 <article class="border-l-4 border-blue-600 pl-4">
                     <a href="https://mp.weixin.qq.com/s/zBo2TtdmwwxbpnNnbAYLwA" class="text-base font-semibold mb-2 hover:text-blue-600 block" style="font-size: 10.5pt;" target="_blank">对话王长虎：离开大厂的第一次创业，要做AIGC时代送水者｜年度AI对话</a>
@@ -109,42 +109,27 @@
         <!-- 页脚 -->
         <section id="comments" class="mb-12 bg-white rounded-lg shadow-lg p-8">
             <h2 class="text-2xl font-bold text-gray-800 mb-4">留下脚印</h2>
-            <div class="mb-8">
-                <form id="comment-form" class="space-y-4">
-                    <div>
-                        <label for="name" class="block text-sm font-medium text-gray-700">你的名字</label>
-                        <input type="text" id="name" name="name" required class="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-blue-500 focus:ring-blue-500">
-                    </div>
-                    <div>
-                        <label for="message" class="block text-sm font-medium text-gray-700">想说的话</label>
-                        <textarea id="message" name="message" rows="4" required class="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-blue-500 focus:ring-blue-500"></textarea>
-                    </div>
-                    <div>
-                        <button type="submit" class="inline-flex justify-center py-2 px-4 border border-transparent shadow-sm text-sm font-medium rounded-md text-white bg-blue-600 hover:bg-blue-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-blue-500">留下脚印</button>
-                    </div>
-                </form>
-            </div>
-            <div id="comments-list" class="space-y-6">
-                <!-- 脚印将通过JavaScript动态加载 -->
-            </div>
+            <div class="giscus"></div>
+            <script src="https://giscus.app/client.js"
+                data-repo="yl0223-ai/personal-page"
+                data-repo-id="R_kgDOLXGxYQ"
+                data-category="General"
+                data-category-id="DIC_kwDOLXGxYc4CdyXD"
+                data-mapping="url"
+                data-strict="0"
+                data-reactions-enabled="1"
+                data-emit-metadata="0"
+                data-input-position="top"
+                data-theme="light"
+                data-lang="zh-CN"
+                data-loading="lazy"
+                crossorigin="anonymous"
+                async>
+            </script>
         </section>
         <footer class="text-center text-gray-600">
-            <p>© 2024 YLS. All rights reserved.</p>
+            <p>© 2024 YSL. All rights reserved.</p>
         </footer>
     </div>
-    <script src="https://giscus.app/client.js"
-        data-repo="yl0223-ai/personal-page"
-        data-repo-id="R_kgDONvIHlw"
-        data-category="Announcements"
-        data-category-id="DIC_kwDONvIHl84CmVOA"
-        data-mapping="pathname"
-        data-strict="0"
-        data-reactions-enabled="1"
-        data-emit-metadata="0"
-        data-input-position="top"
-        data-theme="preferred_color_scheme"
-        data-lang="zh-CN"
-        crossorigin="anonymous"
-        async></script>
 </body>
 </html>
